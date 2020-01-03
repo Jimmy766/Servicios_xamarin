@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Servicios.Views.PanelCliente">
+    <ContentPage.Content>
+        <Grid  ColumnSpacing="0" RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*" />
+                <ColumnDefinition Width="3*"/>
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="#294770">
+                <BoxView HeightRequest="15"/>
+                <StackLayout 
+            Orientation="Horizontal">
+                <Button Text="perf" Padding="0,0,0,50"/>
+                    <StackLayout>
+                        <Label Text="Nombre de Usuario"/>
+                        <Label Text="Ver Perfil" TextColor="Teal"/>
+                    </StackLayout>
+                </StackLayout >
+                <ListView
+                    x:Name="menu"
+                    ItemsSource="{Binding Items}"
+                    SelectionMode="None"
+                    ItemSelected="menu_ItemSelected"
+                    >
+                    
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <ViewCell >
+                                <Grid >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="8*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label HorizontalOptions="Start" Text="X " Grid.Column="0" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                                    <Label Grid.Column="1" HorizontalOptions="Start" Text="{Binding .}"  TextColor="White" />
+                                    <Label  Text=">" Grid.Column="2" HorizontalOptions="End" FontSize="20" FontAttributes="Bold" TextColor="White"/>
+                                </Grid>
+                                
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!--<Button HorizontalOptions="Start"  Text="[icono] item 1 >" BackgroundColor="#294770"/>
+                <Button  HorizontalOptions="StartAndExpand" Text="item 2" BackgroundColor="#294770"/>-->
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

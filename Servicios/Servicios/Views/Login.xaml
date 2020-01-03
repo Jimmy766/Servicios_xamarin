@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Servicios.Views.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Iniciar sesion"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Margin="0,30,0,0" 
+                   FontAttributes="Bold"
+                   />
+            <Button Text="imagen!" Margin="100,50,100,0"
+                    Padding="0,0,0,100"/>
+            <Entry Placeholder="Numero de celular" Margin="20,10,20,0"/>
+            <Entry Placeholder="Contraseña" IsPassword="True"  Margin="20,10,20,0"/>
+            <Button Text="Entrar" HorizontalOptions="Fill" BackgroundColor="#319E31" Margin="20,20,20,0"
+                   Clicked="entrar" />
+            <Button Text="¿Necesitas una cuenta?" HorizontalOptions="Fill" BackgroundColor="#5A9E5A" Margin="20,10,20,0"
+                  Clicked="registro"  />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
