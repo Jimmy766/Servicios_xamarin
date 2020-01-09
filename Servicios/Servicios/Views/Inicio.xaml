@@ -20,7 +20,7 @@
                     />
             <Button Text="Crear cuenta" HorizontalOptions="Fill" BackgroundColor="#5A9E5A" Margin="20,10,20,0"
                    Clicked="registro" />
-            <Label Text="Contactanos" FontAttributes="Italic" TextColor="BlueViolet" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
+            <Label Text="Contáctanos" FontAttributes="Italic" TextColor="BlueViolet" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
             <Label Text="Al registrarte estas de acuerdo con los Terminos de servicio y Politicas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
 
 
