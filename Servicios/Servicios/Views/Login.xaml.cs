@@ -26,7 +26,13 @@ namespace Servicios.Views
 
         private async void entrar(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PerfilCliente());
+            if (usuario.Text != "345612")
+                await DisplayAlert("Error", "Numero de telefono incorrecto!", "ok");
+            else
+            if (password.Text != "test")
+                await DisplayAlert("Error", "Contraseña incorrecta!", "ok");
+            else 
+            await Navigation.PushAsync(new PanelCliente());
         }
     }
 }

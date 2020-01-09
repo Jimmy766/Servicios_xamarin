@@ -23,7 +23,8 @@
                 <Button Text="perf" Padding="0,0,0,50"/>
                     <StackLayout>
                         <Label Text="Nombre de Usuario"/>
-                        <Label Text="Ver Perfil" TextColor="Teal"/>
+                        <Button Text="Ver Perfil" TextColor="Teal" BackgroundColor="Transparent" Clicked="irPerfil"/>
+                        
                     </StackLayout>
                 </StackLayout >
                 <ListView
