@@ -17,6 +17,7 @@ namespace Servicios.Views
         public PanelCliente()
         {
             InitializeComponent();
+            //NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
             Items = new ObservableCollection<string>
             {
@@ -31,11 +32,21 @@ namespace Servicios.Views
                 "Cerrar sesion",
             };
             menu.ItemsSource = Items;
+
         }
 
         private void menu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
            
+        }
+
+        private async void irPerfil(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MenuTabs());
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
         }
     }
 }

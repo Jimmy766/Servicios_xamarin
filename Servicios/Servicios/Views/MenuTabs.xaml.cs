@@ -16,6 +16,7 @@ namespace Servicios.Views
         public MenuTabs()
         {
             InitializeComponent();
+            Title = "Mi Perfil";
             
         }
     }

@@ -14,8 +14,8 @@
                    />
             <Button Text="imagen!" Margin="100,50,100,0"
                     Padding="0,0,0,100"/>
-            <Entry Placeholder="Numero de celular" Margin="20,10,20,0"/>
-            <Entry Placeholder="Contraseña" IsPassword="True"  Margin="20,10,20,0"/>
+            <Entry x:Name="usuario" Placeholder="Numero de celular" Margin="20,10,20,0" Keyboard="Numeric"/>
+            <Entry x:Name="password" Placeholder="Contraseña" IsPassword="True"  Margin="20,10,20,0"/>
             <Button Text="Entrar" HorizontalOptions="Fill" BackgroundColor="#319E31" Margin="20,20,20,0"
                    Clicked="entrar" />
             <Button Text="¿Necesitas una cuenta?" HorizontalOptions="Fill" BackgroundColor="#5A9E5A" Margin="20,10,20,0"

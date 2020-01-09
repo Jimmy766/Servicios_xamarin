@@ -15,6 +15,7 @@ namespace Servicios.Views
         public PerfilCliente()
         {
             InitializeComponent();
+            
         }
     }
 }
