@@ -4,27 +4,29 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Servicios.Views.Inicio">
+             x:Class="Servicios.Views.Inicio" FlowDirection="MatchParent" InputTransparent="False" IsEnabled="False" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Aplicacion!"
+            
+            <Label Text="Pantalla Inicio"
+             
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Margin="0,30,0,0" 
                    FontAttributes="Bold"
+                   
                    />
             <Button Text="imagen!" Margin="100,50,100,0"
                     Padding="0,0,0,100"/>
-            <Button Text="Ingresar" HorizontalOptions="Fill" BackgroundColor="#319E31" Margin="20,30,20,0"
+            <Button Text="INICIAR SESIÓN" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,30,20,0"
                    Clicked="Button_Clicked" />
-            <Button Text="Recuperar clave" HorizontalOptions="Fill" BackgroundColor="#5A9E5A" Margin="20,10,20,0"
+            <Button Text="RECUPERAR CLAVE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
                     />
-            <Button Text="Crear cuenta" HorizontalOptions="Fill" BackgroundColor="#5A9E5A" Margin="20,10,20,0"
+            <Button Text="REGISTRARSE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
                    Clicked="registro" />
-            <Label Text="Contáctanos" FontAttributes="Italic" TextColor="BlueViolet" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
-            <Label Text="Al registrarte estas de acuerdo con los Terminos de servicio y Politicas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
-
-
-
+            <Label Text="Contáctanos" FontAttributes="Italic" TextColor="Blue" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
+            <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

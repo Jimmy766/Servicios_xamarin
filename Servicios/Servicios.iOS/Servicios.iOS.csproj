@@ -147,4 +147,7 @@
       <Name>Servicios</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Principal.jpg" />
+  </ItemGroup>
 </Project>

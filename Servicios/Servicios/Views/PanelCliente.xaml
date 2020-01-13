@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Servicios.Views.PanelCliente">
+    
     <ContentPage.Content>
         <Grid  ColumnSpacing="0" RowSpacing="0">
             <Grid.ColumnDefinitions>
@@ -12,21 +13,26 @@
                 <ColumnDefinition Width="3*"/>
                 
             </Grid.ColumnDefinitions>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="9*"/>
                 
             </Grid.RowDefinitions>
-            <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="#294770">
+            
+            <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="#12CAD6">
                 <BoxView HeightRequest="15"/>
-                <StackLayout 
-            Orientation="Horizontal">
+                
+                <StackLayout Orientation="Horizontal">
                 <Button Text="perf" Padding="0,0,0,50"/>
+                    
                     <StackLayout>
                         <Label Text="Nombre de Usuario"/>
                         <Button Text="Ver Perfil" TextColor="Teal" BackgroundColor="Transparent" Clicked="irPerfil"/>
                         
                     </StackLayout>
+                    
                 </StackLayout >
+                
                 <ListView
                     x:Name="menu"
                     ItemsSource="{Binding Items}"

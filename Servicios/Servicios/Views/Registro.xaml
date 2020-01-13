@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <ScrollView >
         <StackLayout Spacing="0">
-            <Label Text="Crear una nueva cuenta"
+            <Label Text="CREAR NUEVA CUENTA"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Margin="0,20,0,0" 
                    FontAttributes="Bold"
@@ -32,11 +32,11 @@
                 </Picker>
                 <Entry Placeholder="Correo electronico" Keyboard="Email" Margin="20,10,20,0"/>
             <Entry Placeholder="Contraseña" IsPassword="True"  Margin="20,10,20,0"/>
-            <Button Text="Enviar" HorizontalOptions="Fill" BackgroundColor="#319E31" Margin="20,20,20,0"
+                <Button Text="Enviar" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,20,20,0"
                     />
-                <Label Text="Al registrarte estas de acuerdo con los Terminos de servicio y Politicas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
+                <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
 
-                <Button Text="¿Ya tienes una cuenta?" HorizontalOptions="Fill" BackgroundColor="#5A9E5A" Margin="20,10,20,0"
+                <Button Text="¿Ya tienes una cuenta?" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
                     />
                 <BoxView />
             </StackLayout>

@@ -6,10 +6,8 @@
              mc:Ignorable="d"
              x:Class="Servicios.Views.PerfilCliente"
              Title="Mi perfil"
-             
-             
-             
              >
+    
     <ContentPage.ToolbarItems >
         
         <ToolbarItem Text="icono"/>
@@ -17,30 +15,34 @@
     
     <ContentPage.Content >
         
-        <Grid RowSpacing="15">
+        <Grid RowSpacing="30">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="9*" />
                 <ColumnDefinition Width="0.5*" />
             </Grid.ColumnDefinitions>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
+            
             <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
-                <BoxView WidthRequest="115" HeightRequest="115" Color="Blue"/>
-                <StackLayout Spacing="0">
+                <BoxView Margin="0,30,0,0" WidthRequest="115" HeightRequest="115" Color="DeepSkyBlue"/>
+
+                <StackLayout Spacing="10" Margin="20,30,0,0" >
                     <Label Text="Nombre del usuario" />
-                    <Label Text="Telefono" />
-                    <Label Text="Correo electronico" />
-                    <Label Text="Direccion Particular" />
+                    <Label Text="Teléfono" />
+                    <Label Text="Correo electrónico" />
+                    <Label Text="Dirección Particular" />
                 </StackLayout>
             </StackLayout>
-            <Button Grid.Row="1"  Grid.Column="1"   Text="Editar" HorizontalOptions="End"/>
-            <BoxView Grid.Row="2"  Grid.Column="1" HorizontalOptions="FillAndExpand" HeightRequest="3" Color="#30B9B9B9"/>
-            <Button Grid.Row="3"  Grid.Column="1" Text="Mis Direcciones" HorizontalOptions="StartAndExpand" />
+            
+            <Button Grid.Row="1"  Grid.Column="1"   Text="Editar" TextColor="White" HorizontalOptions="End" BackgroundColor="#0fabbc"/>
+            <BoxView Grid.Row="2"  Grid.Column="1" HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#FA163F"/>
+            <Button Grid.Row="3"  Grid.Column="1" Text="Mis Direcciones" TextColor="White" HorizontalOptions="StartAndExpand" BackgroundColor="#0fabbc"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
