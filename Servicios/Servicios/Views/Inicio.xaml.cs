@@ -18,7 +18,7 @@ namespace Servicios.Views
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async Task loginAsync(object sender, EventArgs e)
+        private async Task LoginAsync(object sender, EventArgs e)
         {
             Login l = new Login();
             await Navigation.PushAsync(l);
@@ -30,7 +30,7 @@ namespace Servicios.Views
             await Navigation.PushAsync(l);
         }
 
-        private async void registro(object sender, EventArgs e)
+        private async void Registro(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Registro());
         }
