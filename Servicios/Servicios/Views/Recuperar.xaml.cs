@@ -15,7 +15,7 @@ namespace Servicios.Views
         public Recuperar()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
+           
             
         }
 
