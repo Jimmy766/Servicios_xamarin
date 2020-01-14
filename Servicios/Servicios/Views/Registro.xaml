@@ -32,6 +32,7 @@
                     </Picker.Items>
                 </Picker>
             
+                <Entry Placeholder="Telefono" Keyboard="Numeric" Margin="20,5,20,0"/>
                 <Entry Placeholder="Correo electronico" Keyboard="Email" Margin="20,5,20,0"/>
                 <Entry Placeholder="Contraseña" IsPassword="True"  Margin="20,5,20,20"/>
                 <Button Text="Enviar" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,20,20,0"
@@ -39,7 +40,8 @@
                 <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
 
                 <Button Text="¿Ya tienes una cuenta?" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
-                    />
+                    Pressed="irLogin"
+                        />
                 <BoxView />
             </StackLayout>
         </ScrollView>

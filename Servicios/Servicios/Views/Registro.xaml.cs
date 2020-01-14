@@ -17,5 +17,10 @@ namespace Servicios.Views
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private async void irLogin(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Login());
+        }
     }
 }

@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Servicios.Views.Inicio" FlowDirection="MatchParent" InputTransparent="False" IsEnabled="False" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
+             x:Class="Servicios.Views.Inicio" FlowDirection="MatchParent" InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
         <StackLayout>
@@ -23,7 +23,7 @@
                    Clicked="Button_Clicked" />
             
             <Button Text="RECUPERAR CLAVE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
-                    />
+                  Pressed="irRecuperar"  />
             <Button Text="REGISTRARSE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
                    Clicked="Registro" />
             

@@ -1,6 +1,4 @@
-﻿
-using Naxam.Controls.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,16 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace Servicios.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MenuTabs : BottomTabbedPage
+    public partial class Recuperar : ContentPage
     {
-        private string titulo = "Mi Perfil";
-        public MenuTabs()
+        public Recuperar()
         {
             InitializeComponent();
+           
             
-            Title = "Mi Perfil";
-            
-
         }
+
+        private async void registro(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Registro());
+        }
+
+       
     }
 }
