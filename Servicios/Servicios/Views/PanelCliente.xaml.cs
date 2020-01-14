@@ -32,12 +32,13 @@ namespace Servicios.Views
                 "Cerrar sesion",
             };
             menu.ItemsSource = Items;
-
+            
         }
 
-        private void menu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void menu_ItemSelected(object s, SelectedItemChangedEventArgs e)
         {
-           
+            //if (e.SelectedItem == null) return;
+            await DisplayAlert("info",(s as string),"ok");
         }
 
         private async void irPerfil(object sender, EventArgs e)

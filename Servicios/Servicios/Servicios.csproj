@@ -18,12 +18,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Recuperar.xaml.cs">
+      <DependentUpon>Recuperar.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MenuTabs.xaml.cs">
       <DependentUpon>MenuTabs.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="TabbFix.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Inicio.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -29,6 +29,11 @@ namespace Servicios.Views
             Login l = new Login();
             await Navigation.PushAsync(l);
         }
+        private async void irRecuperar(object sender, EventArgs e)
+        {
+            
+            await Navigation.PushAsync(new Recuperar());
+        }
 
         private async void Registro(object sender, EventArgs e)
         {
