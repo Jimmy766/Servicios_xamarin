@@ -8,7 +8,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-            
+
             <Label Text="Pantalla Inicio"
              
                 VerticalOptions="Center" 
@@ -16,6 +16,7 @@
                    FontAttributes="Bold"
                    
                    />
+            
             <Button Text="imagen!" Margin="100,50,100,0"
                     Padding="0,0,0,100"/>
             

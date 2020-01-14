@@ -150,4 +150,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Principal.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TestIconoApp.png" />
+  </ItemGroup>
 </Project>
