@@ -8,12 +8,11 @@
     <ContentPage.Content>
         <ScrollView >
         <StackLayout Spacing="0" >
-            <Label Text="CREAR NUEVA CUENTA"
+                <Label Text="CREAR NUEVA CUENTA"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Margin="0,10,0,0" 
                    FontAttributes="Bold"
                    />
-            
 
                 <Entry Placeholder="Nombre" Margin="20,25,20,0"/>
                 <Entry Placeholder="Apellido" Margin="20,5,20,0"/>
