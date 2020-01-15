@@ -14,7 +14,8 @@ namespace Servicios
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new NavigationPage( new Inicio());
+            //MainPage = new NavigationPage(new Inicio());
+            MainPage = new Inicio();
             
         }
 

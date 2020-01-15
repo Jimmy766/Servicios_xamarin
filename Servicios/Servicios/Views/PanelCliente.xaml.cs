@@ -11,14 +11,16 @@ using Xamarin.Forms.Xaml;
 namespace Servicios.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PanelCliente : ContentPage
+    public partial class PanelCliente : Shell
     {
         public ObservableCollection<string> Items { get; set; }
         public PanelCliente()
         {
             InitializeComponent();
+            
             //NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
+            
             Items = new ObservableCollection<string>
             {
                 "Notificaciones",
@@ -31,7 +33,7 @@ namespace Servicios.Views
                 "Terminos y condiciones",
                 "Cerrar sesion",
             };
-            menu.ItemsSource = Items;
+            //menu.ItemsSource = Items;
             
         }
 
@@ -43,11 +45,19 @@ namespace Servicios.Views
 
         private async void irPerfil(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MenuTabs());
+            await Navigation.PushModalAsync(new NavigationPage(new MenuTabs()));
+           // Application.Current.MainPage = new NavigationPage(new MenuTabs());
         }
         protected override bool OnBackButtonPressed()
         {
             return true;
+        }
+
+        private async void cerrarSession(object sender, EventArgs e)
+        {
+           // await Navigation.PushAsync(new Inicio());
+            
+            Application.Current.MainPage = new Inicio();
         }
     }
 }

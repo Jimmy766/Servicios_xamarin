@@ -5,19 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration;
-using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
 
-namespace Servicios
+namespace Servicios.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbFix : Shell
+    public partial class Page1 : ContentPage
     {
-        public TabbFix()
+        public Page1()
         {
             InitializeComponent();
-           // On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
         }
     }
 }

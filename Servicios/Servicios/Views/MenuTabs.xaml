@@ -9,7 +9,10 @@
     xmlns:local="clr-namespace:Servicios.Views"
     mc:Ignorable="d"
              x:Class="Servicios.Views.MenuTabs"
-             
+              NavigationPage.HasNavigationBar="True"
+    Title="Mi perfil"
+    NavigationPage.HasBackButton="True"
+    
             >
   <!--Pages can be added as references or inline-->
   <ContentPage Title="Inicio" />

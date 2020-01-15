@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Servicios.Views.Inicio" FlowDirection="MatchParent" InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
+             x:Class="Servicios.Views.Inicio" 
+            Shell.NavBarIsVisible="False"
+            FlyoutBehavior="Disabled"
+             FlyoutIsPresented="False"
+       FlowDirection="MatchParent" InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
 
-    <ContentPage.Content>
+    
+            
+    <ShellContent>
+                <ContentPage>
+                    <ContentPage.Content>
         <StackLayout>
             
             <Label Text="Pantalla Inicio"
@@ -16,8 +24,8 @@
                    FontAttributes="Bold"
                    
                    />
-            <Button Text="imagen!" Margin="100,50,100,0"
-                    Padding="0,0,0,100"/>
+            <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
+                    WidthRequest="200"/>
             
             <Button Text="INICIAR SESIÓN" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,30,20,0"
                    Clicked="Button_Clicked" />
@@ -31,5 +39,9 @@
             <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
             
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+                    </ContentPage.Content>
+                </ContentPage>
+            </ShellContent>
+        
+   
+</Shell>

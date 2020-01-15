@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace Servicios.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Inicio : ContentPage
+    public partial class Inicio : Shell
     {
         public Inicio()
         {
