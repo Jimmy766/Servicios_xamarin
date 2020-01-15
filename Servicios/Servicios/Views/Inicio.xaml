@@ -5,46 +5,44 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Servicios.Views.Inicio" 
-            Shell.NavBarIsVisible="False"
-            FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False"
+             FlyoutBehavior="Disabled"
              FlyoutIsPresented="False"
-       FlowDirection="MatchParent" 
+             FlowDirection="MatchParent" 
        
-       InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
+             InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
 
-    
-            
     <ShellContent>
-                <ContentPage BackgroundImageSource="Principal.jpg">
-                    <ContentPage.Content>
-        <StackLayout>
-            
-            <Label Text="Pantalla Inicio"
+        <ContentPage BackgroundImageSource="Principal.jpg">
+            <ContentPage.Content>
+                <StackLayout>
+
+                    <Label Text="Pantalla Inicio"
              
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" Margin="0,30,0,0" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" Margin="0,30,0,0" 
                    FontAttributes="Bold"
                    TextColor="White" 
                    
                    />
-            <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
+                    <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
                     WidthRequest="200"/>
-            
-            <Button Text="INICIAR SESIÓN" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,30,20,0"
+
+                    <Button Text="INICIAR SESIÓN" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,30,20,0"
                    Clicked="Button_Clicked" />
-            
-            <Button Text="RECUPERAR CLAVE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
+
+                    <Button Text="RECUPERAR CLAVE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
                   Pressed="irRecuperar"  />
-            <Button Text="REGISTRARSE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
+                    <Button Text="REGISTRARSE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
                    Clicked="Registro" />
-            
-            <Label Text="Contáctanos" FontAttributes="Italic" TextColor="Blue" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
-            <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  TextColor="White"/>
-            
-        </StackLayout>
-                    </ContentPage.Content>
-                </ContentPage>
-            </ShellContent>
-        
-   
+
+                    <Label Text="Contáctanos" FontAttributes="Italic" TextColor="DeepSkyBlue" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
+                    <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  TextColor="White"/>
+
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </ShellContent>
+
+
 </Shell>

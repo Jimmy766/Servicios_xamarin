@@ -14,7 +14,7 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="EstiloBase" TargetType="Grid">
-                
+
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
@@ -55,7 +55,7 @@
                         VerticalTextAlignment="Center"
                         TextColor="White"
                         />
-                
+
             </Grid>
         </DataTemplate>
     </Shell.ItemTemplate>
@@ -89,7 +89,7 @@
         </DataTemplate>
     </Shell.MenuItemTemplate>
     <Shell.FlyoutHeaderTemplate >
-        
+
         <DataTemplate>
             <StackLayout Orientation="Horizontal" BackgroundColor="#103069">
                 <Image   Source="ImagenPrincipal.png" Aspect="AspectFit"
@@ -115,39 +115,39 @@
             <local:Page1 Title="Mis proyectos"/>
         </ShellContent>
     </FlyoutItem>
-    <FlyoutItem Title="Buscar servicios" FlyoutIcon="ic_serviciomas.png">
+    <FlyoutItem Title="Buscar servicios" FlyoutIcon="ic_search.png">
         <ShellContent>
-    <local:Page1 Title="Buscar servicios"/>
-                </ShellContent>
-            </FlyoutItem>
+            <local:Page1 Title="Buscar servicios"/>
+        </ShellContent>
+    </FlyoutItem>
     <FlyoutItem Title="Ver promociones" FlyoutIcon="ic_coupons.png">
         <ShellContent>
-    <local:Page1 Title="Ver promociones"/>
- </ShellContent>
+            <local:Page1 Title="Ver promociones"/>
+        </ShellContent>
     </FlyoutItem>
     <FlyoutItem Title="Invitar amigos" FlyoutIcon="ic_invitarfriends.png">
         <ShellContent>
-    <local:Page1 Title="Invitar amigos"/>
- </ShellContent>
+            <local:Page1 Title="Invitar amigos"/>
+        </ShellContent>
     </FlyoutItem>
     <FlyoutItem Title="Soporte Contacto" FlyoutIcon="ic_contact_mail.png">
         <ShellContent>
-    <local:Page1 Title="Soporte Contacto"/>
- </ShellContent>
+            <local:Page1 Title="Soporte Contacto"/>
+        </ShellContent>
     </FlyoutItem>
     <FlyoutItem Title="Configuracion" FlyoutIcon="ic_configphone.png">
         <ShellContent>
-    <local:Page1 Title="Configuracion"/>
- </ShellContent>
+            <local:Page1 Title="Configuracion"/>
+        </ShellContent>
     </FlyoutItem>
     <FlyoutItem Title="Terminos y condiciones" FlyoutIcon="ic_terms.png">
         <ShellContent>
-    <local:Page1 Title="Terminos y condiciones"/>
+            <local:Page1 Title="Terminos y condiciones"/>
 
-     </ShellContent>
+        </ShellContent>
     </FlyoutItem>
     <MenuItem IconImageSource="ic_sesionout.png" Text="Cerrar sessión" Clicked="cerrarSession"  />
-    
+
     <!--<ContentPage.Content>
         <Grid  ColumnSpacing="0" RowSpacing="0">
             <Grid.ColumnDefinitions>
@@ -191,8 +191,10 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                --><!--<Button HorizontalOptions="Start"  Text="[icono] item 1 >" BackgroundColor="#294770"/>
-                <Button  HorizontalOptions="StartAndExpand" Text="item 2" BackgroundColor="#294770"/>--><!--
+                -->
+    <!--<Button HorizontalOptions="Start"  Text="[icono] item 1 >" BackgroundColor="#294770"/>
+                <Button  HorizontalOptions="StartAndExpand" Text="item 2" BackgroundColor="#294770"/>-->
+    <!--
             </StackLayout>
         </Grid>
         

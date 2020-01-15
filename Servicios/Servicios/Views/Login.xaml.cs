@@ -16,7 +16,7 @@ namespace Servicios.Views
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            
+
         }
 
         private async void registro(object sender, EventArgs e)
@@ -26,22 +26,22 @@ namespace Servicios.Views
 
         private async void entrar(object sender, EventArgs e)
         {
-            if (usuario.Text==null)
+            if (usuario.Text == null)
                 await DisplayAlert("Error", "Numero de telefono no puede estar vacio", "ok");
             else
             if (password.Text == null)
                 await DisplayAlert("Error", "Debe ingresar una contraseña", "ok");
             else
-            if (usuario.Text != "345612")
+            if (usuario.Text != "1234567")
                 await DisplayAlert("Error", "Numero de telefono incorrecto!", "ok");
             else
-            if (password.Text != "test")
+            if (password.Text != "prueba")
                 await DisplayAlert("Error", "Contraseña incorrecta!", "ok");
             else
                 //await Navigation.PushAsync(new PanelCliente());
                 Application.Current.MainPage = new PanelCliente();
-            
-            
+
+
         }
     }
 }
