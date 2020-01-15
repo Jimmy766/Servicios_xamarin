@@ -26,7 +26,7 @@ namespace Servicios.Views
                 "Notificaciones",
                 "Mis proyectos",
                 "Buscar servicios",
-                "Ver promociones",
+               //"Ver promociones",
                 "Invitar Amigos",
                 "Soporte contacto",
                 "Configuracion",
