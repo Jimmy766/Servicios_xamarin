@@ -4,7 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Servicios.Views.Registro">
+             x:Class="Servicios.Views.Registro"
+             BackgroundImageSource="Principal.jpg"
+             >
     <ContentPage.Content>
         <ScrollView >
         <StackLayout Spacing="0" >
@@ -12,32 +14,34 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Margin="0,10,0,0" 
                    FontAttributes="Bold"
+                       TextColor="White" 
                    />
 
-                <Entry Placeholder="Nombre" Margin="20,25,20,0"/>
-                <Entry Placeholder="Apellido" Margin="20,5,20,0"/>
-                <Entry Placeholder="Direccion particular" Margin="20,5,20,0"/>
-            
-                <Picker Title="Selecciona region" Margin="20,5,20,0">
+                <Entry Placeholder="Nombre" Margin="20,25,20,0" TextColor="White" PlaceholderColor="White"/>
+                <Entry Placeholder="Apellido" Margin="20,5,20,0" TextColor="White" PlaceholderColor="White"/>
+                <Entry Placeholder="Direccion particular" Margin="20,5,20,0" TextColor="White" PlaceholderColor="White"/>
+
+                <Picker  Title="Selecciona region" Margin="20,5,20,0" TextColor="White" TitleColor="White"  >
+                    
+                    <Picker.Items >
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Picker Title="Selecciona comuna" Margin="20,5,20,0" TextColor="White"  TitleColor="White" >
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
                     </Picker.Items>
                 </Picker>
-            
-                <Picker Title="Selecciona comuna" Margin="20,5,20,0" >
-                    <Picker.Items>
-                        <x:String>1</x:String>
-                        <x:String>2</x:String>
-                    </Picker.Items>
-                </Picker>
-            
-                <Entry Placeholder="Telefono" Keyboard="Numeric" Margin="20,5,20,0"/>
-                <Entry Placeholder="Correo electronico" Keyboard="Email" Margin="20,5,20,0"/>
-                <Entry Placeholder="Contraseña" IsPassword="True"  Margin="20,5,20,20"/>
+
+                <Entry Placeholder="Telefono" Keyboard="Numeric" Margin="20,5,20,0" TextColor="White" PlaceholderColor="White"/>
+                <Entry Placeholder="Correo electronico" Keyboard="Email" Margin="20,5,20,0" TextColor="White" PlaceholderColor="White"/>
+                <Entry Placeholder="Contraseña" IsPassword="True"  Margin="20,5,20,20" TextColor="White" PlaceholderColor="White"/>
                 <Button Text="Enviar" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,20,20,0"
                     />
-                <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
+                <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  TextColor="White" />
 
                 <Button Text="¿Ya tienes una cuenta?" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
                     Pressed="irLogin"

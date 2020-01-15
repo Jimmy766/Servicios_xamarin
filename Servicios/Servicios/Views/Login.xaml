@@ -4,18 +4,21 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Servicios.Views.Login">
+             x:Class="Servicios.Views.Login"
+             BackgroundImageSource="Principal.jpg"
+             >
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Iniciar sesión"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Margin="0,30,0,0" 
                    FontAttributes="Bold"
+                   TextColor="White" 
                    />
             <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
                     WidthRequest="200"/>
-            <Entry x:Name="usuario" Placeholder="Numero de celular" Margin="20,10,20,0" Keyboard="Numeric"/>
-            <Entry x:Name="password" Placeholder="Contraseña" IsPassword="True"  Margin="20,10,20,0"/>
+            <Entry x:Name="usuario" Placeholder="Numero de celular" Margin="20,10,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="password" Placeholder="Contraseña" IsPassword="True"  Margin="20,10,20,0" TextColor="White" PlaceholderColor="White"/>
             <Button Text="Entrar" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,20,20,0"
                    Clicked="entrar" />
             <Button Text="¿Necesitas una cuenta?" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"

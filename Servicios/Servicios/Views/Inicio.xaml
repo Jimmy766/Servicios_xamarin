@@ -8,12 +8,14 @@
             Shell.NavBarIsVisible="False"
             FlyoutBehavior="Disabled"
              FlyoutIsPresented="False"
-       FlowDirection="MatchParent" InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
+       FlowDirection="MatchParent" 
+       
+       InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
 
     
             
     <ShellContent>
-                <ContentPage>
+                <ContentPage BackgroundImageSource="Principal.jpg">
                     <ContentPage.Content>
         <StackLayout>
             
@@ -22,6 +24,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Margin="0,30,0,0" 
                    FontAttributes="Bold"
+                   TextColor="White" 
                    
                    />
             <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
@@ -36,7 +39,7 @@
                    Clicked="Registro" />
             
             <Label Text="Contáctanos" FontAttributes="Italic" TextColor="Blue" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
-            <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />
+            <Label Text="Al registrarte estás de acuerdo con los Términos de servicio y Políticas de Privacidad" FontAttributes="Italic"  Margin="40,20,40,0" MaxLines="3" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"  TextColor="White"/>
             
         </StackLayout>
                     </ContentPage.Content>

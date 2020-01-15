@@ -26,10 +26,10 @@ namespace Servicios.Views
 
         private async void entrar(object sender, EventArgs e)
         {
-            if (usuario.Text=="")
+            if (usuario.Text==null)
                 await DisplayAlert("Error", "Numero de telefono no puede estar vacio", "ok");
             else
-            if (password.Text != "")
+            if (password.Text == null)
                 await DisplayAlert("Error", "Debe ingresar una contraseña", "ok");
             else
             if (usuario.Text != "345612")
