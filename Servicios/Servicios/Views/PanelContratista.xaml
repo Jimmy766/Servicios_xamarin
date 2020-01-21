@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:Servicios.Views"
+             x:Class="Servicios.Views.PanelContratista"
+             Shell.NavBarIsVisible="False"
+             
+             FlyoutIsPresented="True" 
+             FlyoutBackgroundColor="#103069"
+       >
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EstiloBase" TargetType="Grid">
+
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal"/>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#103069"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid Style="{StaticResource EstiloBase}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="5"
+                       Grid.Column="0"
+                       HeightRequest="45"/>
+                <Label  Grid.Column="1" Text="{Binding Title}" 
+                        FontAttributes="Italic" 
+                        Margin="5,0,0,0"
+                        VerticalTextAlignment="Center"
+                        TextColor="White"
+                        />
+                <Label  Grid.Column="2" Text=">" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle"
+                        Margin="5,0,0,0"
+                        VerticalTextAlignment="Center"
+                        TextColor="White"
+                        />
+
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <Grid Style="{StaticResource EstiloBase}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Icon}"
+                       Margin="5"
+                       Grid.Column="0"
+                       HeightRequest="45"/>
+                <Label  Grid.Column="1" Text="{Binding Text}" 
+                        FontAttributes="Italic" 
+                        Margin="5,0,0,0"
+                        VerticalTextAlignment="Center"
+                        TextColor="White"
+                        />
+                <Label  Grid.Column="2" Text=">" 
+                        FontAttributes="Bold" 
+                        FontSize="Subtitle"
+                        Margin="5,0,0,0"
+                        VerticalTextAlignment="Center"
+                        TextColor="White"
+                        />
+
+            </Grid>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>
+    <Shell.FlyoutHeaderTemplate >
+
+        <DataTemplate>
+            <StackLayout Orientation="Horizontal" BackgroundColor="#103069">
+                <Image   Source="ImagenPrincipal.png" Aspect="AspectFit"
+                    WidthRequest="85"/>
+
+                <StackLayout>
+                    <Label Text="Nombre de Usuario" TextColor="White"/>
+                    <Button Text="Ver Perfil" TextColor="Teal" BackgroundColor="Transparent" Clicked="irPerfil"/>
+
+                </StackLayout>
+
+            </StackLayout >
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem Title="Notificaciones" FlyoutIcon="ic_notifica.png">
+        <ShellContent>
+            <local:Page1 Title="Notificaciones"/>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Mis proyectos" FlyoutIcon="ic_proyects.png">
+        <ShellContent>
+            <local:Page1 Title="Mis proyectos"/>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ver promociones" FlyoutIcon="ic_coupons.png">
+        <ShellContent>
+            <local:Page1 Title="Ver promociones"/>
+        </ShellContent>
+    </FlyoutItem>
+   
+    <FlyoutItem Title="Soporte Contacto" FlyoutIcon="ic_contact_mail.png">
+        <ShellContent>
+            <local:Page1 Title="Soporte Contacto"/>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Configuracion" FlyoutIcon="ic_configphone.png">
+        <ShellContent>
+            <local:Page1 Title="Configuracion"/>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Terminos y condiciones" FlyoutIcon="ic_terms.png">
+        <ShellContent>
+            <local:Page1 Title="Terminos y condiciones"/>
+
+        </ShellContent>
+    </FlyoutItem>
+    <MenuItem IconImageSource="ic_sesionout.png" Text="Cerrar sessión" Clicked="cerrarSession"  />
+
+    <!--<ContentPage.Content>
+        <Grid  ColumnSpacing="0" RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*" />
+                <ColumnDefinition Width="3*"/>
+                
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                
+            </Grid.RowDefinitions>
+            
+            <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="#12CAD6">
+                <BoxView HeightRequest="15"/>
+                
+                
+                
+                <ListView
+                    x:Name="menu"
+                    ItemsSource="{Binding Items}"
+                    SelectionMode="None"
+                    ItemSelected="menu_ItemSelected"
+                    >
+                    
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <ViewCell >
+                                <Grid >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="8*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label HorizontalOptions="Start" Text="X " Grid.Column="0" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                                    <Label Grid.Column="1" HorizontalOptions="Start" Text="{Binding .}"  TextColor="White" />
+                                    <Label  Text=">" Grid.Column="2" HorizontalOptions="End" FontSize="20" FontAttributes="Bold" TextColor="White"/>
+                                </Grid>
+                                
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                -->
+    <!--<Button HorizontalOptions="Start"  Text="[icono] item 1 >" BackgroundColor="#294770"/>
+                <Button  HorizontalOptions="StartAndExpand" Text="item 2" BackgroundColor="#294770"/>-->
+    <!--
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>-->
+</Shell>    

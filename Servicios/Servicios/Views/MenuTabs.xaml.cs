@@ -14,7 +14,9 @@ namespace Servicios.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuTabs : BottomTabbedPage
     {
+#pragma warning disable CS0414 // El campo 'MenuTabs.titulo' está asignado pero su valor nunca se usa
         private string titulo = "Mi Perfil";
+#pragma warning restore CS0414 // El campo 'MenuTabs.titulo' está asignado pero su valor nunca se usa
         public MenuTabs()
         {
             InitializeComponent();

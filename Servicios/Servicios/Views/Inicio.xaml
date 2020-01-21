@@ -17,14 +17,6 @@
             <ContentPage.Content>
                 <StackLayout>
 
-                    <Label Text="Pantalla Inicio"
-             
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center" Margin="0,30,0,0" 
-                   FontAttributes="Bold"
-                   TextColor="White" 
-                   
-                   />
                     <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
                     WidthRequest="200"/>
 

@@ -38,9 +38,13 @@ namespace Servicios.Views
             if (password.Text != "prueba")
                 await DisplayAlert("Error", "Contraseña incorrecta!", "ok");
             else
+            if (usuario.Text == "1234567")
+                
                 //await Navigation.PushAsync(new PanelCliente());
-                Application.Current.MainPage = new PanelCliente();
-
+                //Application.Current.MainPage = new PanelCliente();
+           // else
+          //  if (usuario.Text == "12341234")
+                Application.Current.MainPage = new PanelContratista();
 
         }
     }
