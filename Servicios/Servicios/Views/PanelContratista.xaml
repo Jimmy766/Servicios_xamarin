@@ -96,7 +96,7 @@
                     WidthRequest="85"/>
 
                 <StackLayout>
-                    <Label Text="Nombre de Usuario" TextColor="White"/>
+                    <Label Text="Nombre de Contratista" TextColor="White"/>
                     <Button Text="Ver Perfil" TextColor="Teal" BackgroundColor="Transparent" Clicked="irPerfil"/>
 
                 </StackLayout>
