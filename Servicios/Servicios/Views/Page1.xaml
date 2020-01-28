@@ -5,10 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Servicios.Views.Page1"
-             BackgroundColor="BlueViolet">
+             BackgroundColor="SkyBlue">
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="En construccion"
+            <Label Text="En construcción"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                 TextColor="Black"

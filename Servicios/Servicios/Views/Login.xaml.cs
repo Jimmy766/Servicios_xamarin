@@ -44,7 +44,7 @@ namespace Servicios.Views
                 //Application.Current.MainPage = new PanelCliente();
            // else
           //  if (usuario.Text == "12341234")
-                Application.Current.MainPage = new PanelContratista();
+                Application.Current.MainPage = new PanelAdministrator();
 
         }
     }

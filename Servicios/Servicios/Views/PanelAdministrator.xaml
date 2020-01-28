@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:local="clr-namespace:Servicios.Views"
-             x:Class="Servicios.Views.PanelContratista"
+             x:Class="Servicios.Views.PanelAdministrator"
              Shell.NavBarIsVisible="False"
              
              FlyoutIsPresented="True" 
@@ -96,8 +96,7 @@
                     WidthRequest="85"/>
 
                 <StackLayout>
-                    <Label Text="Nombre de Contratista" TextColor="White"/>
-                    <Button Text="Ver Perfil" TextColor="Teal" BackgroundColor="Transparent" Clicked="irPerfil"/>
+                    <Label Text="Administrador" TextColor="White"/>
                 </StackLayout>
 
             </StackLayout >
@@ -109,34 +108,30 @@
         </ShellContent>
     </FlyoutItem>
 
-    <FlyoutItem Title="Mis proyectos" FlyoutIcon="ic_proyects.png">
+    <FlyoutItem Title="Ver proyectos" FlyoutIcon="ic_proyects.png">
         <ShellContent>
-            <local:Page1 Title="Mis proyectos"/>
+            <local:Page1 Title="Ver proyectos"/>
         </ShellContent>
     </FlyoutItem>
 
-    <FlyoutItem Title="Ver promociones" FlyoutIcon="ic_coupons.png">
+    <FlyoutItem Title="Publicar promociones" FlyoutIcon="ic_coupons.png">
         <ShellContent>
-            <local:Page1 Title="Ver promociones"/>
+            <local:Page1 Title="Publicar promociones"/>
         </ShellContent>
     </FlyoutItem>
-   
-    <FlyoutItem Title="Soporte Contacto" FlyoutIcon="ic_contact_mail.png">
+
+    <FlyoutItem Title="Administrar usuarios" FlyoutIcon="ic_coupons.png">
         <ShellContent>
-            <local:Page1 Title="Soporte Contacto"/>
+            <local:Page1 Title="Administrar usuarios"/>
         </ShellContent>
     </FlyoutItem>
+
     <FlyoutItem Title="Configuracion" FlyoutIcon="ic_configphone.png">
         <ShellContent>
             <local:Page1 Title="Configuracion"/>
         </ShellContent>
     </FlyoutItem>
-    <FlyoutItem Title="Terminos y condiciones" FlyoutIcon="ic_terms.png">
-        <ShellContent>
-            <local:Page1 Title="Terminos y condiciones"/>
-
-        </ShellContent>
-    </FlyoutItem>
+    
     <MenuItem IconImageSource="ic_sesionout.png" Text="Cerrar sessión" Clicked="cerrarSession"  />
 
     <!--<ContentPage.Content>
