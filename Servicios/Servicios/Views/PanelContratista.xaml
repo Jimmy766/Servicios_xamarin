@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              xmlns:local="clr-namespace:Servicios.Views"
              x:Class="Servicios.Views.PanelContratista"
-             Shell.NavBarIsVisible="False"
+             
              
              FlyoutIsPresented="True" 
              FlyoutBackgroundColor="#103069"

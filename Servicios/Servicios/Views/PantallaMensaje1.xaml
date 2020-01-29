@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Servicios.Views.PantallaMensaje1">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="4*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="1" Grid.Column="1" Text="gif" 
+                    BackgroundColor="LightGray"
+                    CornerRadius="200"
+                    
+                    
+                    />
+            <Label Grid.Row="2" Grid.Column="1" Text="Recopilando datos de tu reserva..."
+                   MaxLines="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+            <Label Grid.Row="3" Grid.Column="1" Text="Sabias que por cada trabajo realizado acumulas saldo para tu proximo proyecto" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   MaxLines="4"
+                   
+                   />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

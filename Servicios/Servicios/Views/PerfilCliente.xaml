@@ -6,12 +6,12 @@
              mc:Ignorable="d"
              x:Class="Servicios.Views.PerfilCliente"
              Title="Mi perfil"
-            
+             
              >
     
     <ContentPage.ToolbarItems >
-        
-        <ToolbarItem Text="icono"/>
+        <ToolbarItem Text="menu" Clicked="mostrarPanel" Order="Primary"/>
+        <ToolbarItem Text="icono" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content >

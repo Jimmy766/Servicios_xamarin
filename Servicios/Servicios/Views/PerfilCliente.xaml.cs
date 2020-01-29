@@ -17,5 +17,15 @@ namespace Servicios.Views
             InitializeComponent();
             
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            (App.Current.MainPage as Shell).FlyoutIsPresented = false;
+            NavigationPage.SetHasBackButton(this, false);
+        }
+        private void mostrarPanel(object sender, EventArgs e)
+        {
+            (App.Current.MainPage as Shell).FlyoutIsPresented = true;
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace Servicios.Views
         public PanelCliente()
         {
             InitializeComponent();
-            
+            CurrentItem = servicios;
             //NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
             
@@ -36,7 +36,7 @@ namespace Servicios.Views
                 "Cerrar sesion",
             };
             //menu.ItemsSource = Items;
-            
+            Routing.RegisterRoute("perfil", typeof(PerfilCliente));
         }
 
         private async void menu_ItemSelected(object s, SelectedItemChangedEventArgs e)
@@ -47,11 +47,17 @@ namespace Servicios.Views
 
         private async void irPerfil(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new MenuTabs()));
+            
+            await Shell.Current.GoToAsync("perfil");
+            //await Navigation.PushAsync(new NavigationPage(new MenuTabs()));
            // Application.Current.MainPage = new NavigationPage(new MenuTabs());
+           
         }
         protected override bool OnBackButtonPressed()
         {
+           // (App.Current.MainPage as Shell).FlyoutIsPresented = true;
+            if (Navigation.NavigationStack.Count > 0)
+                Navigation.PopAsync();
             return true;
         }
 

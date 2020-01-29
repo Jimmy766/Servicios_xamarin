@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Servicios.Views.DetalleReserva">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button 
+                Margin="0,20,0,0"
+                Grid.Row="0" Grid.Column="1" Text="gif" 
+                    BackgroundColor="LightGray"
+                    CornerRadius="200"
+                    
+                    
+                    />
+            <Label Grid.Row="1" Grid.Column="1" Text="Detalle de tu reserva"
+                   MaxLines="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+            <Grid  RowSpacing="0" Grid.Row="2" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.5*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Servicio" VerticalOptions="Start"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="texto de ejemplo" 
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="CenterAndExpand"/>
+                
+            </Grid>
+            <Grid  RowSpacing="0" Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.5*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Servicio" VerticalOptions="Start"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="texto de ejemplo" 
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="CenterAndExpand"/>
+
+            </Grid>
+
+            <Grid  RowSpacing="0" Grid.Row="4" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.5*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Servicio" VerticalOptions="Start"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="texto de ejemplo" 
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="CenterAndExpand"/>
+
+            </Grid>
+            <Grid  RowSpacing="0" Grid.Row="5" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.5*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Servicio" VerticalOptions="Start"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="texto de ejemplo" 
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="CenterAndExpand"/>
+
+            </Grid>
+            <Grid  ColumnSpacing="0" Grid.Row="6" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox Grid.Row="0" 
+                          Color="LightBlue"
+                          Grid.Column="0"/>
+                <Label Grid.Row="0" Grid.Column="1" 
+                       VerticalOptions="CenterAndExpand"
+                       Text="Declaro conocer las politicas de servicio" />
+                
+                
+            </Grid>
+
+            
+            <Button 
+                Grid.Row="7" Grid.Column="1"
+                Text="Confirmar" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Pressed="irMensaje"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

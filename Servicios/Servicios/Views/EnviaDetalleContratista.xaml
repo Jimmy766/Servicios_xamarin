@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Servicios.Views.EnviaDetalleContratista">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Envia un detalle al contratista: "
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"
+                Grid.Row="0"
+                Grid.Column="0"
+                   />
+            <Editor Placeholder="Especifica el detalle del servicio que requiere..."
+                   Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                   
+                   />
+            <Label Text="Agrega una foto: " 
+                   Grid.Row="2" Grid.Column="0"
+                   HorizontalOptions="Start"
+                   VerticalOptions="CenterAndExpand"
+                   />
+            <Grid Grid.Row="3" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <ImageButton Grid.Row="0" Grid.Column="0"/>
+                <ImageButton Grid.Row="0" Grid.Column="1"/>
+                <ImageButton Grid.Row="0" Grid.Column="2"/>
+                <ImageButton Grid.Row="0" Grid.Column="3"/>
+                
+                <Button Text="+"  Grid.Row="1" Grid.Column="0"/>
+                <Button Text="+" Grid.Row="1" Grid.Column="1"/>
+                <Button Text="+" Grid.Row="1" Grid.Column="2"/>
+                <Button Text="+" Grid.Row="1" Grid.Column="3"/>
+            </Grid>
+            <Button Text="Enviar" 
+                    
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Fill" Grid.Row="4"
+                    Pressed="irMensaje"
+                    Grid.Column="0"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -26,25 +26,30 @@ namespace Servicios.Views
 
         private async void entrar(object sender, EventArgs e)
         {
+            
+
             if (usuario.Text == null)
+
                 await DisplayAlert("Error", "Numero de telefono no puede estar vacio", "ok");
             else
             if (password.Text == null)
                 await DisplayAlert("Error", "Debe ingresar una contraseña", "ok");
             else
-            if (usuario.Text != "1234567")
+            if (usuario.Text != "1234567" && usuario.Text != "123456" && usuario.Text != "12345")
                 await DisplayAlert("Error", "Numero de telefono incorrecto!", "ok");
             else
             if (password.Text != "prueba")
                 await DisplayAlert("Error", "Contraseña incorrecta!", "ok");
-            //else
-            //if (usuario.Text == "1234567")
+            else
+            if (usuario.Text == "1234567")
+
                 
-                //await Navigation.PushAsync(new PanelCliente());
-                //Application.Current.MainPage = new PanelCliente();
-           // else
-          //  if (usuario.Text == "12341234")
+            Application.Current.MainPage = new PanelCliente();
+            else
+            if (usuario.Text == "123456")
                 Application.Current.MainPage = new PanelAdministrator();
+            else
+                Application.Current.MainPage = new PanelContratista();
 
         }
     }

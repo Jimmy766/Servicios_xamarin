@@ -6,11 +6,13 @@
              mc:Ignorable="d"
              xmlns:local="clr-namespace:Servicios.Views"
              x:Class="Servicios.Views.PanelCliente"
-             Shell.NavBarIsVisible="False"
+             
              
              FlyoutIsPresented="True" 
              FlyoutBackgroundColor="#103069"
        >
+    
+   
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="EstiloBase" TargetType="Grid">
@@ -112,12 +114,12 @@
 
     <FlyoutItem Title="Mis proyectos" FlyoutIcon="ic_proyects.png">
         <ShellContent>
-            <local:Page1 Title="Mis proyectos"/>
+            <local:Page1 Title="Mis proyectos" />
         </ShellContent>
     </FlyoutItem>
-    <FlyoutItem Title="Buscar servicios" FlyoutIcon="ic_search.png">
+    <FlyoutItem Title="Buscar servicios" FlyoutIcon="ic_search.png" x:Name="servicios" >
         <ShellContent>
-            <local:Page1 Title="Buscar servicios"/>
+            <local:ServiciosCliente Title="Buscar servicios"/>
         </ShellContent>
     </FlyoutItem>
     <FlyoutItem Title="Ver promociones" FlyoutIcon="ic_coupons.png">
@@ -199,4 +201,5 @@
         </Grid>
         
     </ContentPage.Content>-->
+    
 </Shell>

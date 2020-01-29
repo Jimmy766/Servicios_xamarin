@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Servicios.Views.PantallaMensaje2">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="1" Grid.Column="1" Text="gif" 
+                    BackgroundColor="LightGray"
+                    CornerRadius="200"
+                    
+                    
+                    />
+            <Label Grid.Row="2" Grid.Column="1" Text="Felicitaciones!!, hemos confirmado tu reserva!"
+                   MaxLines="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+           <Label Grid.Row="3" Grid.Column="1" Text="El numero de tu solicitud es:"
+                   MaxLines="2"
+                   TextDecorations="Underline"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+           <Label Grid.Row="4" Grid.Column="1" Text="xxxx xxxx"
+                   MaxLines="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+           <Label Grid.Row="5" Grid.Column="1" Text="Enviamos el detalle a tu mail:"
+                   MaxLines="2"
+                  TextDecorations="Underline"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+           <Label Grid.Row="6" Grid.Column="1" Text="juan02@sevices.com"
+                   MaxLines="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+            <StackLayout Orientation="Horizontal" Grid.Row="7" Grid.Column="1">
+                <Button 
+                    BackgroundColor="Transparent"
+                    Text="Seguir Navegando" Pressed="irHome" TextColor="BlueViolet"/>
+                <Button 
+                    BackgroundColor="Transparent" TextColor="BlueViolet"
+                    Text="Contactanos"/>
+                
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

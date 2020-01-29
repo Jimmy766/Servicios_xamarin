@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+             x:Class="Servicios.Views.SeleccionaFecha">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+               
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="9*" />
+                <ColumnDefinition Width="0.5*" />
+                
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="1" 
+                   Text="Selecciona la fecha"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   
+                   />
+            <controls:Calendar
+                x:Name="calendario"
+                Grid.Column="1"
+                Grid.Row="1"
+                StartDay="Monday"
+                StartDate="2020-01-01"
+                WeekdaysShow="True"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" 
+                DatesFontSize="15"
+                >
+            
+            </controls:Calendar>
+            <Label Grid.Row="2" Grid.Column="1"  
+                   Text="Selecciona la hora"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   
+                   />
+            <Picker  Title="00:00 Horas" 
+                     Grid.Row="3" Grid.Column="1"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Start"
+                     >
+
+                <Picker.Items >
+                    <x:String>01:00 Horas</x:String>
+                    <x:String>03:00 Horas</x:String>
+                    <x:String>04:00 Horas</x:String>
+                    <x:String>05:00 Horas</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Grid.Row="4" Grid.Column="1"  Text="Enviar" 
+                    BackgroundColor="#23911E" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Pressed="irMensaje"
+                    />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
