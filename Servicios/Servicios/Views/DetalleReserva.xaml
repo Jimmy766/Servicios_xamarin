@@ -126,7 +126,7 @@
                           Grid.Column="0"/>
                 <Label Grid.Row="0" Grid.Column="1" 
                        VerticalOptions="CenterAndExpand"
-                       Text="Declaro conocer las politicas de servicio" />
+                       Text="Declaro conocer las políticas de servicio" />
                 
                 
             </Grid>
@@ -134,7 +134,12 @@
             
             <Button 
                 Grid.Row="7" Grid.Column="1"
-                Text="Confirmar" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Pressed="irMensaje"/>
+                Text="Confirmar" 
+                BackgroundColor="#FACC2E"
+                Margin="0,0,0,10"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Pressed="irMensaje"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

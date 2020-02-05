@@ -20,12 +20,12 @@
                     <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
                     WidthRequest="200"/>
 
-                    <Button Text="INICIAR SESIÓN" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,30,20,0"
+                    <Button Text="INICIAR SESIÓN" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#FACC2E" Margin="40,90,40,0"
                    Clicked="Button_Clicked" />
 
-                    <Button Text="RECUPERAR CLAVE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
+                    <Button Text="RECUPERAR CLAVE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#FACC2E" Margin="40,10,40,0"
                   Pressed="irRecuperar"  />
-                    <Button Text="REGISTRARSE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
+                    <Button Text="REGISTRARSE" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#FACC2E" Margin="40,10,40,0"
                    Clicked="Registro" />
 
                     <Label Text="Contáctanos" FontAttributes="Italic" TextColor="DeepSkyBlue" TextDecorations="Underline" Margin="0,10,0,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"  />

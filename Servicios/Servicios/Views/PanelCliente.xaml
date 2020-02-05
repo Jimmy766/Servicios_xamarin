@@ -9,7 +9,7 @@
              
              
              FlyoutIsPresented="True" 
-             FlyoutBackgroundColor="#103069"
+             FlyoutBackgroundColor="#FACC2E"
        >
     
    
@@ -23,7 +23,7 @@
                             <VisualState x:Name="Normal"/>
                             <VisualState x:Name="Selected">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="#103069"/>
+                                    <Setter Property="BackgroundColor" Value="#FE642E"/>
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -93,12 +93,12 @@
     <Shell.FlyoutHeaderTemplate >
 
         <DataTemplate>
-            <StackLayout Orientation="Horizontal" BackgroundColor="#103069">
+            <StackLayout Orientation="Horizontal" BackgroundColor="#EFF8FB">
                 <Image   Source="ImagenPrincipal.png" Aspect="AspectFit"
                     WidthRequest="85"/>
 
                 <StackLayout>
-                    <Label Text="Nombre de Usuario" TextColor="White"/>
+                    <Label Text="Nombre de Usuario" TextColor="Teal"/>
                     <Button Text="Ver Perfil" TextColor="Teal" BackgroundColor="Transparent" Clicked="irPerfil"/>
 
                 </StackLayout>

@@ -59,10 +59,16 @@
                    />
             <StackLayout Orientation="Horizontal" Grid.Row="7" Grid.Column="1">
                 <Button 
-                    BackgroundColor="Transparent"
+                    BackgroundColor="#FACC2E"
+                Margin="0,0,0,0"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
                     Text="Seguir Navegando" Pressed="irHome" TextColor="BlueViolet"/>
                 <Button 
-                    BackgroundColor="Transparent" TextColor="BlueViolet"
+                    BackgroundColor="#FACC2E"
+                Margin="0,0,0,0"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand" TextColor="BlueViolet"
                     Text="Contactanos"/>
                 
             </StackLayout>

@@ -40,8 +40,8 @@
             <Button Grid.Row="3" Grid.Column="3" Text="Otros" BackgroundColor="LightGray"/>
             
             <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Text="Enviar" Grid.RowSpan="2"
-                    BackgroundColor="#23911E" 
-                    Margin="70,30,0,30"
+                    BackgroundColor="#FACC2E" 
+                    Margin="80,40,10,40"
                     Pressed="irSeleccionFecha"
                     />
         </Grid>

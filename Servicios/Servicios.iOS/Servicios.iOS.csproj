@@ -151,9 +151,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Principal.jpg" />
+    <BundleResource Include="Resources\TestIconoApp.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\TestIconoApp.png" />
+    <BundleResource Include="Resources\Principal.jpg" />
   </ItemGroup>
 </Project>

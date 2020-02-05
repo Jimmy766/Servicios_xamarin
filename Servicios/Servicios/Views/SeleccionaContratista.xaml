@@ -63,7 +63,7 @@
             
         </ListView>
             <Button Grid.Row="2" Text="Enviar" HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand" BackgroundColor="#15730D"
+                    VerticalOptions="FillAndExpand" BackgroundColor="#FACC2E"
                     Pressed="irEnviaDetalleContratista"
                     />
         </Grid>

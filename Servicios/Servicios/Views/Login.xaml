@@ -15,13 +15,13 @@
                    FontAttributes="Bold"
                    TextColor="White" 
                    />
-            <Image  Margin="100,50,100,0" Source="ImagenPrincipal.png" Aspect="AspectFit"
+            <Image  Margin="100,40,100,40" Source="ImagenPrincipal.png" Aspect="AspectFit"
                     WidthRequest="200"/>
-            <Entry x:Name="usuario" Placeholder="Numero de celular" Margin="20,10,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"/>
-            <Entry x:Name="password" Placeholder="Contraseña" IsPassword="True"  Margin="20,10,20,0" TextColor="White" PlaceholderColor="White"/>
-            <Button Text="Entrar" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,20,20,0"
+            <Entry x:Name="usuario" Placeholder="Numero de celular" Margin="40,30,20,0" Keyboard="Numeric" TextColor="White" PlaceholderColor="White"/>
+            <Entry x:Name="password" Placeholder="Contraseña" IsPassword="True"  Margin="40,10,20,0" TextColor="White" PlaceholderColor="White"/>
+            <Button Text="Entrar" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#FACC2E" Margin="40,0,40,0"
                    Clicked="entrar" />
-            <Button Text="¿Necesitas una cuenta?" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#0fabbc" Margin="20,10,20,0"
+            <Button Text="¿Necesitas una cuenta?" TextColor="White" HorizontalOptions="Fill" BackgroundColor="#FACC2E" Margin="40,10,40,0"
                    Clicked="registro"  />
             
         </StackLayout>
