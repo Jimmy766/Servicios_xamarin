@@ -34,7 +34,8 @@ namespace Servicios.Views
                 "Cerrar sesion",
             };
             //menu.ItemsSource = Items;
-
+            
+            Routing.RegisterRoute("notificaciones", typeof(NotificacionesContratista));
         }
 
         private async void menu_ItemSelected(object s, SelectedItemChangedEventArgs e)

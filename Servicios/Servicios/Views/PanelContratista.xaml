@@ -105,13 +105,13 @@
     </Shell.FlyoutHeaderTemplate>
     <FlyoutItem Title="Notificaciones" FlyoutIcon="ic_notifica.png">
         <ShellContent>
-            <local:Page1 Title="Notificaciones"/>
+            <local:NotificacionesContratista Title="Notificaciones"/>
         </ShellContent>
     </FlyoutItem>
 
-    <FlyoutItem Title="Mis proyectos" FlyoutIcon="ic_proyects.png">
-        <ShellContent>
-            <local:Page1 Title="Mis proyectos"/>
+    <FlyoutItem  Title="Mis proyectos" FlyoutIcon="ic_proyects.png">
+        <ShellContent >
+            <local:ProyectosContratista Title="Mis proyectos"/>
         </ShellContent>
     </FlyoutItem>
 

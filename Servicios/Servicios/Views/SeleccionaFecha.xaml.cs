@@ -15,21 +15,27 @@ namespace Servicios.Views
         public SeleccionaFecha()
         {
             InitializeComponent();
+            calendario.StartDate = DateTime.Now;
             calendario.SpecialDates.Add(new XamForms.Controls.SpecialDate(DateTime.Now.AddDays(1))
             {
                 Selectable = false,
-                TextColor=Color.OrangeRed,
-                
-            });
+                TextColor = Color.OrangeRed,
+                BackgroundColor = Color.Gray
+
+            }); 
             calendario.SpecialDates.Add(new XamForms.Controls.SpecialDate(DateTime.Now.AddDays(5))
             {
                 Selectable = false,
-                TextColor=Color.OrangeRed
+                TextColor=Color.OrangeRed,
+                BackgroundColor = Color.Gray
+
             });
             calendario.SpecialDates.Add(new XamForms.Controls.SpecialDate(DateTime.Now.AddDays(-7))
             {
                 Selectable = false,
-                TextColor=Color.OrangeRed
+                TextColor=Color.OrangeRed,
+                BackgroundColor = Color.Gray
+
             });
             
         }

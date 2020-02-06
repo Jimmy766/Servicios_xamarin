@@ -26,8 +26,8 @@ namespace Servicios.Views
 
         private async void entrar(object sender, EventArgs e)
         {
-            
 
+            
             if (usuario.Text == null)
 
                 await DisplayAlert("Error", "Numero de telefono no puede estar vacio", "ok");

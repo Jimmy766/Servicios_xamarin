@@ -10,16 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace Servicios.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NotificacionesContratista : ContentPage
+    public partial class MensajeNotificacion : ContentPage
     {
-        public NotificacionesContratista()
+        public MensajeNotificacion()
         {
             InitializeComponent();
         }
 
-        private async void irMensaje(object sender, EventArgs e)
+        private async void irHome(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MensajeNotificacion());
+            await (Application.Current.MainPage as Shell).Navigation.PopToRootAsync();
+            
         }
     }
 }
