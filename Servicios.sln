@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios.Android", "Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios.iOS", "Servicios\Servicios.iOS\Servicios.iOS.csproj", "{A58C0306-7939-4759-8CA3-CB37315B06B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "Servicios\Servicios\Servicios.csproj", "{7D9784B7-01DC-44C2-8A96-D23924CDDB1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios", "Servicios\Servicios\Servicios.csproj", "{7D9784B7-01DC-44C2-8A96-D23924CDDB1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
