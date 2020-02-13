@@ -4,9 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Servicios.Views.ServiciosCliente"
-             
-             >
+             x:Class="Servicios.Views.SeleccionaSubcategoria"
+             Title="Selecciona subcategoria">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -29,20 +28,20 @@
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    />
-            <Button Grid.Row="1" Grid.Column="1" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="1" Grid.Column="2" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="1" Grid.Column="3" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="2" Grid.Column="1" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="2" Grid.Column="2" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="2" Grid.Column="3" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="3" Grid.Column="1" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="3" Grid.Column="2" Text="Otros" BackgroundColor="LightGray"/>
-            <Button Grid.Row="3" Grid.Column="3" Text="Otros" BackgroundColor="LightGray"/>
-            
+            <Button Grid.Row="1" Grid.Column="1" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="1" Grid.Column="3" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="Sub cat" BackgroundColor="LightGray"/>
+            <Button Grid.Row="3" Grid.Column="3" Text="Sub cat" BackgroundColor="LightGray"/>
+
             <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Text="Enviar" Grid.RowSpan="2"
                     BackgroundColor="#FACC2E" 
                     Margin="80,40,10,40"
-                    Pressed="irSeleccionSubCat"
+                    Pressed="irSeleccionFecha"
                     />
         </Grid>
     </ContentPage.Content>

@@ -9,6 +9,7 @@
              FlyoutBehavior="Disabled"
              FlyoutIsPresented="False"
              FlowDirection="MatchParent" 
+             BackgroundColor="#FACC2E00"
        
              InputTransparent="False" IsEnabled="true" Opacity="50" IsVisible="True" IsTabStop="False" AutomationProperties.IsInAccessibleTree="False" NavigationPage.HasNavigationBar="False">
 

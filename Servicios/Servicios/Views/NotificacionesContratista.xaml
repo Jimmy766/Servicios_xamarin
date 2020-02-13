@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="Servicios.Views.NotificacionesContratista">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Frame 
            HasShadow="True"  
@@ -25,8 +26,9 @@
                 </Frame.Margin>
                 <StackLayout Orientation="Horizontal">
                     
-                    <Grid VerticalOptions="CenterAndExpand"  
-                 Padding="0"  
+                    <Grid VerticalOptions="Center"  
+                 Padding="0"  RowSpacing="0"
+                          
                  HorizontalOptions="FillAndExpand"  
                  BackgroundColor="Transparent">
                         <Grid.RowDefinitions>
@@ -39,11 +41,11 @@
                    HorizontalTextAlignment="Start"  
                    
                    FontSize="16"  
-                   Text="hola">
+                   Text="Nro Solicitud 1234567">
                            
                         </Label>
                         
-                        <Grid Grid.Row="2"  
+                        <Grid Grid.Row="1"  
                    BackgroundColor="Transparent"  
                    Padding="4">
                             <Grid.ColumnDefinitions>
@@ -52,14 +54,113 @@
                             </Grid.ColumnDefinitions>
                             <Label Grid.Row="0"  
                           Grid.Column="0"  
-                          Text="User Age"/>
-                            <Label Grid.Row="0"  
-                          Grid.Column="1"  
-                          Text="hola2"/>
+                          Text="Servicio: Mantencion A/C"/>
+                            <Label Grid.Row="1"  
+                          Grid.Column="0"  
+                          Text="Fecha de solicitud: DD/MM//AAAA"/>
+                            <Label Grid.Row="2"  
+                          Grid.Column="0"  
+                          Text="Horario: 10:00 AM"/>
+                            <Label Grid.Row="3"  
+                          Grid.Column="0"  
+                          Text="Direccion: Las gaviotas 125"/>
+                            <Label Grid.Row="4"  
+                          Grid.Column="0"  
+                          Text="Comuna: Maipu"/>
+                            <Label Grid.Row="5"  
+                          Grid.Column="0"  
+                          Text="Calificacion Usuario: 5"/>
+                            <Label Grid.Row="6"  
+                          Grid.Column="0"  
+                          Text="Estado: Pendiente"/>
                         </Grid>
+                        <StackLayout
+                            HorizontalOptions="End"
+                            Grid.Row="2" Orientation="Horizontal">
+                                <Button Text="Aprobar" Pressed="irMensaje" />
+                            <Button Text="Rechazar"/>
+                            
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <Frame 
+           HasShadow="True"  
+           Margin="10,50,0,10"  
+                
+                   BorderColor="Black"
+           BackgroundColor="White" >
+                <Frame.OutlineColor>
+                    <OnPlatform x:TypeArguments="Color"  
+                    Android="Gray"  
+                    iOS="Gray"/>
+                </Frame.OutlineColor>
+                <Frame.Margin>
+                    <OnPlatform x:TypeArguments="Thickness"  
+                     Android="10"   
+                     iOS="10"/>
+                </Frame.Margin>
+                <StackLayout Orientation="Horizontal">
+
+                    <Grid VerticalOptions="Center"  
+                 Padding="0"  RowSpacing="0"
+                          
+                 HorizontalOptions="FillAndExpand"  
+                 BackgroundColor="Transparent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label FontAttributes="Bold"  
+                   Grid.Row="0"  
+                   HorizontalTextAlignment="Start"  
+                   
+                   FontSize="16"  
+                   Text="Nro Solicitud 1234567">
+
+                        </Label>
+
+                        <Grid Grid.Row="1"  
+                   BackgroundColor="Transparent"  
+                   Padding="4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0"  
+                          Grid.Column="0"  
+                          Text="Servicio: Mantencion A/C"/>
+                            <Label Grid.Row="1"  
+                          Grid.Column="0"  
+                          Text="Fecha de solicitud: DD/MM//AAAA"/>
+                            <Label Grid.Row="2"  
+                          Grid.Column="0"  
+                          Text="Horario: 10:00 AM"/>
+                            <Label Grid.Row="3"  
+                          Grid.Column="0"  
+                          Text="Direccion: Las gaviotas 125"/>
+                            <Label Grid.Row="4"  
+                          Grid.Column="0"  
+                          Text="Comuna: Maipu"/>
+                            <Label Grid.Row="5"  
+                          Grid.Column="0"  
+                          Text="Calificacion Usuario: 5"/>
+                            <Label Grid.Row="6"  
+                          Grid.Column="0"  
+                          Text="Estado: Pendiente"/>
+                        </Grid>
+                        <StackLayout
+                            HorizontalOptions="End"
+                            Grid.Row="2" Orientation="Horizontal">
+                            <Button Text="Aprobar" Pressed="irMensaje" />
+                            <Button Text="Rechazar"/>
+
+                        </StackLayout>
                     </Grid>
                 </StackLayout>
             </Frame>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

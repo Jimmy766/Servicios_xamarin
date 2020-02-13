@@ -20,6 +20,7 @@ namespace Servicios.Views
         {
             InitializeComponent();
             CurrentItem = servicios;
+            
             //NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
             

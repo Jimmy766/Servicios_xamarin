@@ -17,9 +17,9 @@ namespace Servicios.Views
             InitializeComponent();
         }
 
-        private async void irSeleccionFecha(object sender, EventArgs e)
+        private async void irSeleccionSubCat(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SeleccionaFecha());
+            await Navigation.PushAsync(new SeleccionaSubcategoria());
             
         }
     }

@@ -5,12 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
-             x:Class="Servicios.Views.SeleccionaFecha">
+             x:Class="Servicios.Views.SeleccionaFecha"
+             Title="Selecciona fecha"
+             >
     <ContentPage.Content>
         <Grid ColumnSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="10*"/>
+                <RowDefinition Height="8*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="3*"/>
                 <RowDefinition Height="2*"/>
@@ -23,7 +25,7 @@
                 
             </Grid.ColumnDefinitions>
             <Label Grid.Row="0" Grid.Column="1" 
-                   Text="Selecciona la fecha"
+                   Text=""
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    
@@ -33,13 +35,14 @@
                 Grid.Column="1"
                 Grid.Row="1"
                 StartDay="Monday"
-                StartDate="2020-01-01"
+                
+                
                 WeekdaysShow="True"
-                VerticalOptions="FillAndExpand"
+                VerticalOptions="Center"
                 HorizontalOptions="FillAndExpand" 
                 DatesFontSize="15"
                 >
-            
+                
             </controls:Calendar>
             <Label Grid.Row="2" Grid.Column="1"  
                    Text="Selecciona la hora"

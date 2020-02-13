@@ -7,7 +7,7 @@
              xmlns:local="clr-namespace:Servicios.Views"
              x:Class="Servicios.Views.PanelCliente"
              
-             
+             BackgroundColor="#FACC2E"
              FlyoutIsPresented="True" 
              FlyoutBackgroundColor="#FACC2E"
        >
@@ -117,9 +117,9 @@
             <local:Page1 Title="Mis proyectos" />
         </ShellContent>
     </FlyoutItem>
-    <FlyoutItem Title="Buscar servicios" FlyoutIcon="ic_search.png" x:Name="servicios" >
+    <FlyoutItem Title="Seleccionar categoria" FlyoutIcon="ic_search.png" x:Name="servicios" >
         <ShellContent>
-            <local:ServiciosCliente Title="Buscar servicios"/>
+            <local:ServiciosCliente Title="Seleccionar categoria"/>
         </ShellContent>
     </FlyoutItem>
     <FlyoutItem Title="Ver promociones" FlyoutIcon="ic_coupons.png">
